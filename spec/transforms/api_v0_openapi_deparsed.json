@@ -151,7 +151,6 @@
                     "project_ref",
                     "parent_project_ref",
                     "is_default",
-                    "git_branch",
                     "created_at",
                     "updated_at"
                   ]
@@ -788,7 +787,6 @@
                       "project_ref",
                       "parent_project_ref",
                       "is_default",
-                      "git_branch",
                       "created_at",
                       "updated_at"
                     ]
@@ -886,7 +884,6 @@
                     "project_ref",
                     "parent_project_ref",
                     "is_default",
-                    "git_branch",
                     "created_at",
                     "updated_at"
                   ]
@@ -2966,6 +2963,9 @@
                     "pgbouncer_enabled": {
                       "type": "boolean"
                     },
+                    "supavisor_enabled": {
+                      "type": "boolean"
+                    },
                     "pgbouncer_status": {
                       "enum": ["COMING_DOWN", "COMING_UP", "DISABLED", "ENABLED", "RELOADING"],
                       "type": "string"
@@ -2992,6 +2992,7 @@
                     "ignore_startup_parameters",
                     "inserted_at",
                     "pgbouncer_enabled",
+                    "supavisor_enabled",
                     "pgbouncer_status",
                     "pool_mode",
                     "connectionString"
@@ -5005,7 +5006,6 @@
           "project_ref",
           "parent_project_ref",
           "is_default",
-          "git_branch",
           "created_at",
           "updated_at"
         ]
@@ -5808,6 +5808,9 @@
           "pgbouncer_enabled": {
             "type": "boolean"
           },
+          "supavisor_enabled": {
+            "type": "boolean"
+          },
           "pgbouncer_status": {
             "enum": ["COMING_DOWN", "COMING_UP", "DISABLED", "ENABLED", "RELOADING"],
             "type": "string"
@@ -5834,6 +5837,7 @@
           "ignore_startup_parameters",
           "inserted_at",
           "pgbouncer_enabled",
+          "supavisor_enabled",
           "pgbouncer_status",
           "pool_mode",
           "connectionString"
